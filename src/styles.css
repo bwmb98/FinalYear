@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    margin-top: 0%;
+    min-height: 20vh;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    /* background-image: linear-gradient(rgb(164, 230, 247), rgb(190, 141, 230)); */
+ }
+.container{
+    margin-top: 1.5%;
+}
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all 1.5s ease;
+}
+.inner:hover img{
+    transform: scale(1.5);
+}
+.contain{
+    margin-top: 4%;
+    margin-left: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+.types{
+    margin-top: 4%;
+    margin-left: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+.bcc{
+    margin-top: 4%;
+    margin-left: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+.skin-image{
+    max-width: 400px;
+    float: right;
+    margin-left: 37px;
+    margin-right: 10px;
+}
+.types-image{
+    max-width: 300px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 37px;
+}
+.bcc-image{
+    max-width: 300px;
+    float: right;
+    margin-left: 37px;
+    margin-right: 10px;
+}
+.footer{
+    background-color: rgb(109, 106, 106);
+    text-align: center;
+}
+.nav-link{
+    font-size: 25px;
+}
