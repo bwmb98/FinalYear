@@ -14,7 +14,7 @@ export class TestingComponent implements OnInit {
   onUpload(event:any): void {
     let data = new FormData();
     data.append('file', event.target.files[0]);
-    axios.post('http://final-year-backend.herokuapp.com/upload_file', data, {
+    axios.post('https://final-year-backend.herokuapp.com/upload_file', data, {
       headers: {
         'Content-Type': 'multipart/form-data',
       }
