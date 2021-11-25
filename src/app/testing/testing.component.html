@@ -16,6 +16,7 @@
 </nav>
 <body>
     <div class="filebrowser">
-        <input class="upload-box" type="file" accept="image/*">
+        <input class="upload-box" type="file" accept="image/*" (change)=(onUpload($event))>
+        <button onclick="">Upload</button>
     </div>
 </body>
