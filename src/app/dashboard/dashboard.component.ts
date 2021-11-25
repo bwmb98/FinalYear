@@ -7,11 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  title= 'Detecting Basal Cell Carcinoma';
-
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

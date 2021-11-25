@@ -1,13 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { TestingComponent } from './testing/testing.component';
-
 
 @NgModule({
   declarations: [
@@ -18,7 +16,6 @@ import { TestingComponent } from './testing/testing.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatToolbarModule,
     BrowserAnimationsModule
   ],
   providers: [],
