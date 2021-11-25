@@ -18,4 +18,9 @@
     <div class="filebrowser">
         <input class="upload-box" type="file" accept="image/*">
     </div>
+    <div class="button">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button [disabled]="addproductform.form.invalid" type="submit" class="btn btn-outline-success">Upload</button>
+        </div>
+    </div>
 </body>
