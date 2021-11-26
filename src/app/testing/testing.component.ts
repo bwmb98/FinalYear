@@ -11,6 +11,7 @@ import axios from 'axios';
 export class TestingComponent implements OnInit {
   displayResult =false
   disease:string;
+  url:any
   data=new FormData();
   constructor() {
     this.disease=''
@@ -30,10 +31,23 @@ export class TestingComponent implements OnInit {
       console.log(error)
     });
   }
-  onChoose(event:any):void{ 
+  onChoose(event:any):void{
+    if (event.target.files && event.target.files[0]) {
+      var reader = new FileReader();
+
+      reader.readAsDataURL(event.target.files[0]); // read file as data url
+
+      reader.onload = (event) => {
+        // called once readAsDataURL is completed
+        this.url = event.target?.result;
+      };
+    } 
     if(this.data.has('file')){
       this.data.delete('file')
     }
     this.data.append('file', event.target.files[0])
+  }
+  back():void{
+    this.displayResult=false
   }
 }

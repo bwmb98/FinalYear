@@ -15,7 +15,7 @@
     </div> 
 </nav>
 <body>
-    <app-result disease={{disease}} *ngIf="displayResult"></app-result>
+    <app-result disease={{disease}} url={{url}} (backEvent)=(back()) *ngIf="displayResult"></app-result>
     <div class="filebrowser" *ngIf="!displayResult">
         <input class="upload-box" type="file" accept="image/*" (change)=(onChoose($event))>
         <br>
