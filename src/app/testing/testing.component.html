@@ -12,24 +12,13 @@
                 </a> -->
             </li>
         </ul>
-    </div>
+    </div> 
 </nav>
 <body>
-    <div class="filebrowser">
-        <input class="upload-box" type="file" accept="image/*" (change)=(onUpload($event))>
+    <app-result disease={{disease}} *ngIf="displayResult"></app-result>
+    <div class="filebrowser" *ngIf="!displayResult">
+        <input class="upload-box" type="file" accept="image/*" (change)=(onChoose($event))>
         <br>
-        <button class="upload" onclick="">Upload</button>
-    </div>
-    <div class="noify">
-        <div class="positive" id="positive">
-            <div class="alert alert-success" role="alert">
-            positive
-          </div>
-        </div>
-        <div class="neggative" id="negative">
-          <div class="alert alert-danger" role="alert">
-            negative
-          </div>
-        </div>
+        <button class="upload" (click)=(onUpload($event))>Upload</button>
     </div>
 </body>
