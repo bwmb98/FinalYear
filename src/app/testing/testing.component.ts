@@ -20,6 +20,12 @@ export class TestingComponent implements OnInit {
       }
     }).then((response) => {
       console.log(response)
+      if(10<=0){
+        document.getElementById("positive").style.display="block";
+      }
+      else{
+        document.getElementById("negative").style.display="block";
+      }
     }).catch((error) => {
       console.log(error)
     });

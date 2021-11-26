@@ -38,3 +38,10 @@
     color: lightseagreen;
     box-shadow:0 10px 16px 0 rgba(0,0,0,0.01),0 6px 20px 0 rgba(0,0,0,0.1);
 }
+
+.positive{
+    display: none;
+}
+.negative{
+    display: none;
+}
