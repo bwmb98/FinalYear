@@ -12,11 +12,13 @@
                 </a> -->
             </li>
         </ul>
-    </div>
+    </div> 
 </nav>
 <body>
-    <div class="filebrowser">
-        <input class="upload-box" type="file" accept="image/*" (change)=(onUpload($event))>
-        <button onclick="">Upload</button>
+    <app-result disease={{disease}} url={{url}} (backEvent)=(back()) *ngIf="displayResult"></app-result>
+    <div class="filebrowser" *ngIf="!displayResult">
+        <input class="upload-box" type="file" accept="image/*" (change)=(onChoose($event))>
+        <br>
+        <button class="upload" (click)=(onUpload($event))>Upload</button>
     </div>
 </body>
