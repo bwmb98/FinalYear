@@ -1,9 +1,129 @@
 <body>
-    <div class="results">
-        <div class="try">
-            <p class="para">{{disease}}</p>
+    <div>
+        <div>
+            <img class="input-image" [src]="url" height="200">
         </div>
-        <img class="input-image" [src]="url" height="200">
-        <button class="back-to" (click)="back()">Back</button>
+        <div class="button-back">
+            <button class="back-to" (click)="back()">Back</button>
+        </div>
+        <div>
+            <p class="para"><b>{{disease}}</b></p>
+        </div>
+        <div class="bkl">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+            <p *ngIf="disease == 'Benign Keratosis'">A Benign keratosis is a common
+                noncancerous skin growth. People tend to get more of them as they get older. <br><br>
+
+                Benign keratoses are usually brown, black or light tan. The growths look waxy, scaly and slightly
+                raised. They usually appear on the head, neck, chest or back. <br><br>
+
+                Benign keratoses are harmless and not contagious. They don't need treatment, but you may decide to
+                have them removed if they become irritated by clothing or you don't like how they look. <br></p>
+
+            <h6><b>Symptoms</b></h6><br>
+            A benign keratosis usually looks like a waxy or wartlike growth. It typically appears on the face, chest,
+            shoulders or back. You may develop a single growth, though multiple growths are more common. <br><br>
+
+            <b> A benign keratosis:</b>
+
+            <ul>
+                <li> Ranges in color from light tan to brown or black</li>
+                <li> Is round or oval shaped</li>
+                <li> Has a characteristic "pasted on" look</li>
+                <li>Is flat or slightly raised with a scaly surface</li>
+                <li>Ranges in size from very small to more than 1 inch (2.5 centimeters) across</li>
+                <li> May itch</li>
+            </ul>
+
+        </div>
+
+        <div class="akiec">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+            <p *ngIf="disease == 'Actinic Keratoses'">An actinic keratosis is a rough, scaly
+                patch on the skin that develops from years of sun exposure. It's often found on the face, lips, ears,
+                forearms, scalp, neck or back of the hands.<br><br>
+
+                Also known as a solar keratosis, an actinic keratosis grows slowly and usually first appears in people
+                over 40. You can reduce your risk of this skin condition by minimizing your sun exposure and protecting
+                your skin from ultraviolet (UV) rays.<br><br>
+
+                Left untreated, the risk of actinic keratoses turning into a type of skin cancer called squamous cell
+                carcinoma is about 5% to 10%.</p>
+            <h6><b>Symptoms</b></h6>
+            Actinic keratoses vary in appearance. <br><br>
+            <b>Signs and symptoms include:</b>
+            <ul>
+                <li>Rough, dry or scaly patch of skin, usually less than 1 inch (2.5 centimeters) in diameter</li>
+                <li>Flat to slightly raised patch or bump on the top layer of skin</li>
+                <li>In some cases, a hard, wartlike surface</li>
+                <li>Color variations, including pink, red or brown</li>
+                <li>Itching, burning, bleeding or crusting</li>
+                <li>New patches or bumps on sun-exposed areas of the head, neck, hands and forearms</li>
+            </ul>
+
+        </div>
+        <div class="nv">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+            <p *ngIf="disease == 'Melanocytic Nevi'">A melanocytic naevus (American spelling ‘nevus’), or mole, is a
+                common benign skin lesion due to a local proliferation of pigment cells (melanocytes). It is sometimes
+                called a naevocytic naevus or just 'naevus' (but note that there are other types of naevi). A brown or
+                black melanocytic naevus contains the pigment melanin, so may also be called a pigmented naevus.
+                <br><br>
+
+                A melanocytic naevus can be present at birth (a congenital melanocytic naevus) or appear later (an
+                acquired naevus). There are various kinds of congenital and acquired melanocytic naevi (American
+                spelling 'nevi').
+            </p>
+            <h6><b>Clinical features of melanocytic nevi</b></h6>
+            <ul>
+                <li>They may arise on any part of the body.</li>
+                <li>They differ in appearance depending on the body site.</li>
+                <li>They may be flat or protruding.</li>
+                <li>Light-skinned individuals tend to have light-coloured naevi and dark-skinned individuals tend to
+                    have dark brown or black naevi.</li>
+                <li>They vary in colour from pink or flesh tones to dark brown, steel blue, or black.</li>
+                <li>Although mostly round or oval in shape, moles are sometimes unusual shapes.</li>
+                <li>They range in size from a couple of millimetres to several centimetres in diameter.</li>
+            </ul>
+        </div>
+        <div class="bcc">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+            <p *ngIf="disease == 'Basal cell carcinoma'">Basal cell carcinoma is a type of skin cancer. Basal cell
+                carcinoma begins in the basal cells — a type of cell within the skin that produces new skin cells as old
+                ones die off.<br><br>
+
+                Basal cell carcinoma often appears as a slightly transparent bump on the skin, though it can take other
+                forms. Basal cell carcinoma occurs most often on areas of the skin that are exposed to the sun, such as
+                your head and neck.<br><br>
+
+                Most basal cell carcinomas are thought to be caused by long-term exposure to ultraviolet (UV) radiation
+                from sunlight. Avoiding the sun and using sunscreen may help protect against basal cell carcinoma.
+            </p>
+            <h6><b>Symptoms</b></h6>
+            Basal cell carcinoma usually develops on sun-exposed parts of your body, especially your head and neck. Less
+            often, basal cell carcinoma can develop on parts of your body usually protected from the sun, such as the
+            genitals.<br><br>
+
+            Basal cell carcinoma appears as a change in the skin, such as a growth or a sore that won't heal. These
+            changes in the skin (lesions) usually have one of the following characteristics:
+            <ul>
+                <li><b>A shiny, skin-colored bump</b> that's translucent, meaning you can see a bit through the surface. The bump can look pearly white or pink on white skin. On brown and Black skin, the bump often looks brown or glossy black. Tiny blood vessels might be visible, though they may be difficult to see on brown and Black skin. The bump may bleed and scab over.</li>
+            <li><b>A brown, black or blue lesion —</b> or a lesion with dark spots — with a slightly raised, translucent border.</li>
+            <li><b>A flat, scaly patch</b> with a raised edge. Over time, these patches can grow quite large.</li>
+             <li> <b> A white, waxy, scar-like lesion </b>without a clearly defined border.</li>
+            </ul>
+        </div>
+        <div class="vasc">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+            <p *ngIf="disease == 'Vascular Skin Lesion'">paragraph2</p>
+        </div>
+        <div class="mel">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+            <p *ngIf="disease == 'Melanoma'">paragraph2</p>
+        </div>
+        <div class="df">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+            <p *ngIf="disease == 'Dermatofibroma'">paragraph2</p>
+        </div>
     </div>
 </body>
