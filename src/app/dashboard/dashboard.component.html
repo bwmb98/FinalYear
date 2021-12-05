@@ -3,7 +3,7 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a routerLink="/dashboard" routerLinkActive="active" class="nav-link"
-                    style="color: rgb(201, 197, 197);">Home</a>
+                    style="color: #15942b">Home</a>
             </li>
             <li class="nav-item">
                 <a routerLink="/testing" routerLinkActive="active" class="nav-link"
@@ -16,58 +16,68 @@
 </nav>
 
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <div class="card shadow" style="width: 18rem;">
-                    <div class="inner">
-                        <img class="card-img-top" src="./assets/imgs/can.jpg" alt="Cancer Image">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Skin Cancer</h5>
-                        <p class="card-text">Skin cancer — the abnormal growth of skin cells — most often develops on
-                            skin exposed to the sun. But this common form of cancer can also occur on areas of your skin
-                            not ordinarily exposed to sunlight.</p>
-                        <a href="#whatiscancer" class="btn btn-success">Learn more...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow" style="width: 18rem;">
-                    <div class="inner">
-                        <img class="card-img-top" src="./assets/imgs/lists.jpg" alt="List">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Common types of skin cancers</h5>
-                        <p class="card-text">Basal Cell Carcinoma <br> Squamous Cell Carcinoma <br> Merkel Cell Cancer
-                            <br> Melanoma
-                        </p>
-                        <a href="#commontypes" class="btn btn-success">Learn more...</a>
+    <div style="background-image: url(https://image.freepik.com/free-vector/green-curve-frame-template-vector_53876-113965.jpg); background-size: cover; padding-top: 5rem; padding-bottom: 5rem;">
+        <div class="container col-8 offset-2">
+            <div class="row justify-content-center ">
+                <div class="col-md-4">
+                    <div class="card shadow" style="width: 15rem; margin-left: 0px; height: 40rem; border-radius: 1rem;">
+                        <div class="inner">
+                            <img class="card-img-top" src="./assets/imgs/can.jpg" alt="Cancer Image" style="border-radius: 1rem;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Skin Cancer</h5>
+                            <br>
+                            <p class="card-text">Skin cancer — the abnormal growth of skin cells — most often develops on
+                                skin exposed to the sun. But this common form of cancer can also occur on areas of your skin
+                                not ordinarily exposed to sunlight.</p>
+                                <br>
+                            <a href="#whatiscancer" class="btn btn-success">Learn more...</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow" style="width: 18rem;">
-                    <div class="inner">
-                        <img class="card-img-top" src="./assets/imgs/basal.jpg" alt="BCC">
+                <div class="col-md-4">
+                    <div class="card shadow" style="width: 15rem; margin-left: 10%; height: 40rem; border-radius: 1rem;">
+                        <div class="inner">
+                            <img class="card-img-top" src="./assets/imgs/lists.jpg" alt="List" style="border-radius: 1rem;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Common types of skin cancers</h5>
+                            <br>
+                            <p class="card-text">Basal Cell Carcinoma <br> Squamous Cell Carcinoma <br> Merkel Cell Cancer
+                                <br> Melanoma
+                            </p>
+                            <br>
+                            <br>
+                            <a href="#commontypes" class="btn btn-success">Learn more...</a>
+                        </div>
                     </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Basal Cell Carcinoma</h5>
-                        <p class="card-text">Basal cell carcinoma is a type of skin cancer. It begins
-                            in the basal cells. BCC often appears as a slightly transparent bump on the skin,
-                            though it can take other forms.</p>
-                        <a href="#bcc" class="btn btn-success">Learn more...</a>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow" style="width: 15rem; float: right; height: 40rem; border-radius: 1rem;">
+                        <div class="inner">
+                            <img class="card-img-top" src="./assets/imgs/basal.jpg" alt="BCC" style="border-radius: 1rem;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Basal Cell Carcinoma</h5>
+                            <br>
+                            <p class="card-text">Basal cell carcinoma is a type of skin cancer. It begins
+                                in the basal cells. BCC often appears as a slightly transparent bump on the skin,
+                                though it can take other forms.</p>
+                                <br>
+                                <br>
+                            <a href="#bcc" class="btn btn-success">Learn more...</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="contain">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <div class="container col-8 offset-2" style="margin-top: 5rem; margin-bottom: 5rem;">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <a name="whatiscancer"></a>
         <h3><b>What is Skin Cancer</b></h3> <br>
-        <img class="skin-image" src="./assets/imgs/skin.jpg" alt="skin">
-        <p>
+        <img class="skin-image" src="./assets/imgs/skin.jpg" alt="skin" style="border-radius: 1rem;">
+        <p style="text-align: justify;">
             Skin cancer is the out-of-control growth of abnormal cells in the epidermis, the outermost skin layer,
             caused by unrepaired DNA damage that triggers mutations. These mutations lead the skin cells to multiply
             rapidly and form malignant tumors.
@@ -79,8 +89,12 @@
             precancerous stage, before it has become a full-blown skin cancer or penetrated below the surface of the
             skin.
         </p><br>
+        <br>
+        <br>
+        <br>
+        <br>
         <h3><b>Symptoms</b></h3> <br>
-        <p>
+        <p style="text-align: justify;">
             Skin cancer develops primarily on areas of sun-exposed skin, including the scalp, face, lips, ears, neck,
             chest, arms and hands, and on the legs in women. But it can also form on areas that rarely see the light of
             day — your palms, beneath your fingernails or toenails, and your genital area. <br><br>
@@ -101,43 +115,46 @@
             <li><b>evolving:</b> You can detect that the mole is changing size, color, or shape.</li>
         </ul>
     </div>
-    <div class="types">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-        <a name="commontypes"></a>
-        <h3><b>Common Types of Skin Cancers</b></h3> <br>
-        <img class="types-image" src="./assets/imgs/types.jpg" alt="types">
-        <p>Basal and squamous cell skin cancers are the most common types of skin cancer. They start in the top layer of
-            skin (the epidermis), and are often related to sun exposure.<br><br>
-            Most common types of skin cancers are:
-        </p>
-        <ul>
-            <li><b>Squamous cells:</b> These are flat cells in the upper (outer) part of the epidermis, which are
-                constantly shed as new ones form. When these cells grow out of control, they can develop into squamous
-                cell skin cancer (also called squamous cell carcinoma).</li>
-            <li><b>Basal cells:</b> These cells are in the lower part of the epidermis, called the basal cell layer.
-                These cells constantly divide to form new cells to replace the squamous cells that wear off the skin’s
-                surface. As these cells move up in the epidermis, they get flatter, eventually becoming squamous cells.
-                Skin cancers that start in the basal cell layer are called basal cell skin cancers or basal cell
-                carcinomas.</li>
-            <li><b>Melanoma:</b>These cells make the brown pigment called melanin, which gives the skin its tan or brown
-                color. Melanin acts as the body’s natural sunscreen, protecting the deeper layers of the skin from some
-                of the harmful effects of the sun. Melanoma skin cancer starts in these cells.</li>
-        </ul>
-        <br>
-        <h4><b>Other Types of Skin Cancers</b></h4>
-        <ul>
-            <li>Kaposi Sarcoma</li>
-            <li>Cutaneous (skin) Lymphoma</li>
-            <li>Sebaceous Gland Carcinoma</li>
-            <li>Dermatofibrosarcoma Protuberans (DFSP)</li>
-        </ul>
+    <div style="background-image: url(https://image.freepik.com/free-vector/green-curve-abstract-background_53876-99569.jpg); background-size: cover; padding-bottom: 5rem; padding-top: 5rem">
+        <div class="container col-8 offset-2">
+            <a name="commontypes"></a>
+            <h3><b>Common Types of Skin Cancers</b></h3> <br>
+            <img class="types-image" src="./assets/imgs/types.jpg" alt="types" style="border-radius: 1rem;">
+            <p style="text-align: justify;">Basal and squamous cell skin cancers are the most common types of skin cancer. They start in the top layer of
+                skin (the epidermis), and are often related to sun exposure.<br><br>
+                Most common types of skin cancers are:
+            </p>
+            <ul>
+                <li><b>Squamous cells:</b> These are flat cells in the upper (outer) part of the epidermis, which are
+                    constantly shed as new ones form. When these cells grow out of control, they can develop into squamous
+                    cell skin cancer (also called squamous cell carcinoma).</li>
+                <li><b>Basal cells:</b> These cells are in the lower part of the epidermis, called the basal cell layer.
+                    These cells constantly divide to form new cells to replace the squamous cells that wear off the skin’s
+                    surface. As these cells move up in the epidermis, they get flatter, eventually becoming squamous cells.
+                    Skin cancers that start in the basal cell layer are called basal cell skin cancers or basal cell
+                    carcinomas.</li>
+                <li><b>Melanoma:</b>These cells make the brown pigment called melanin, which gives the skin its tan or brown
+                    color. Melanin acts as the body’s natural sunscreen, protecting the deeper layers of the skin from some
+                    of the harmful effects of the sun. Melanoma skin cancer starts in these cells.</li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <h4><b>Other Types of Skin Cancers</b></h4>
+            <ul>
+                <li>Kaposi Sarcoma</li>
+                <li>Cutaneous (skin) Lymphoma</li>
+                <li>Sebaceous Gland Carcinoma</li>
+                <li>Dermatofibrosarcoma Protuberans (DFSP)</li>
+            </ul>
+        </div>
     </div>
-    <div class="bcc">
+    <div class="container col-8 offset-2" style="margin-top: 5rem;">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <a name="bcc"></a>
         <h3><b>Basal Cell Carcinoma</b></h3> <br>
-        <img class="bcc-image" src="./assets/imgs/bccc.png" alt="basal">
-        <p>
+        <img class="bcc-image" src="./assets/imgs/bccc.png" alt="basal" style="border-radius: 1rem;">
+        <p style="text-align: justify;">
             Basal cell carcinoma (also called basal cell skin cancer) is most common type of skin cancer. About 8 out of
             10 skin cancers are basal cell carcinomas (also called basal cell cancers). <br><br>
 
@@ -153,7 +170,7 @@
         </p>
     </div>
     <br><br>
-    <footer class="footer">
+    <footer class="footer" style="background-color: #15942b; color: white; padding-top: 2rem; padding-bottom: 1rem">
         <p>Detecting Basal Cell Carcinoma - Final Year Project (D-CS-18-0012 - BWM Binusha)</p>
     </footer>
 </body>

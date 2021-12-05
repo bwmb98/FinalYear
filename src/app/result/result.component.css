@@ -7,7 +7,10 @@
 .para{
     margin-left: 40px;
     margin-top: 40px;
+}
 
+body{
+    font-family: 'Montserrat';
 }
 
 .back-to{
@@ -17,13 +20,13 @@
     width: 100px;
     border-radius: 25px;
     border-color: rgba(0,0,0,0);
-    background-color: rgb(212, 60, 80);
+    background-color: #1ba832;
     color: white;
 }
 
 .back-to:hover{
     background-color: white;
-    color: #c02d46;
+    color: #15942b;
     box-shadow:0 10px 16px 0 rgba(0,0,0,0.01),0 6px 20px 0 rgba(0,0,0,0.1);
 }
 .bkl{

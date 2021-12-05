@@ -7,7 +7,7 @@
             </li>
             <li class="nav-item">
                 <a routerLink="/testing" routerLinkActive="active" class="nav-link"
-                    style="color:rgb(201, 197, 197) ;">Test</a>
+                    style="color:#15942b ;">Test</a>
                 <!-- <h5 style="color: rgb(201, 197, 197);">Test</h5>
                 </a> -->
             </li>
@@ -16,9 +16,10 @@
 </nav>
 <body>
     <app-result disease={{disease}} url={{url}} (backEvent)=(back()) *ngIf="displayResult"></app-result>
-    <div class="filebrowser" *ngIf="!displayResult">
+    <div class="filebrowser col-6 offset-3" *ngIf="!displayResult">
         <input class="upload-box" type="file" accept="image/*" (change)=(onChoose($event))>
         <br>
         <button class="upload" (click)=(onUpload($event))>Upload</button>
     </div>
+    
 </body>
