@@ -1,5 +1,6 @@
 <body>
     <div>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <div>
             <img class="input-image" [src]="url" height="200">
         </div>
@@ -9,9 +10,8 @@
         <div>
             <p class="para"><b>{{disease}}</b></p>
         </div>
-        <div class="bkl">
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-            <p *ngIf="disease == 'Benign Keratosis'">A Benign keratosis is a common
+        <div class="bkl" *ngIf="disease == 'Benign Keratosis'">
+            <p>A Benign keratosis is a common
                 noncancerous skin growth. People tend to get more of them as they get older. <br><br>
 
                 Benign keratoses are usually brown, black or light tan. The growths look waxy, scaly and slightly
@@ -37,9 +37,8 @@
 
         </div>
 
-        <div class="akiec">
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-            <p *ngIf="disease == 'Actinic Keratoses'">An actinic keratosis is a rough, scaly
+        <div class="akiec" *ngIf="disease == 'Actinic Keratoses'">
+            <p>An actinic keratosis is a rough, scaly
                 patch on the skin that develops from years of sun exposure. It's often found on the face, lips, ears,
                 forearms, scalp, neck or back of the hands.<br><br>
 
@@ -60,11 +59,9 @@
                 <li>Itching, burning, bleeding or crusting</li>
                 <li>New patches or bumps on sun-exposed areas of the head, neck, hands and forearms</li>
             </ul>
-
         </div>
-        <div class="nv">
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-            <p *ngIf="disease == 'Melanocytic Nevi'">A melanocytic naevus (American spelling ‘nevus’), or mole, is a
+        <div class="nv" *ngIf="disease == 'Melanocytic Nevi'">
+            <p>A melanocytic naevus (American spelling ‘nevus’), or mole, is a
                 common benign skin lesion due to a local proliferation of pigment cells (melanocytes). It is sometimes
                 called a naevocytic naevus or just 'naevus' (but note that there are other types of naevi). A brown or
                 black melanocytic naevus contains the pigment melanin, so may also be called a pigmented naevus.
@@ -86,9 +83,8 @@
                 <li>They range in size from a couple of millimetres to several centimetres in diameter.</li>
             </ul>
         </div>
-        <div class="bcc">
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-            <p *ngIf="disease == 'Basal cell carcinoma'">Basal cell carcinoma is a type of skin cancer. Basal cell
+        <div class="bcc" *ngIf="disease == 'Basal cell carcinoma'">
+            <p>Basal cell carcinoma is a type of skin cancer. Basal cell
                 carcinoma begins in the basal cells — a type of cell within the skin that produces new skin cells as old
                 ones die off.<br><br>
 
@@ -107,23 +103,111 @@
             Basal cell carcinoma appears as a change in the skin, such as a growth or a sore that won't heal. These
             changes in the skin (lesions) usually have one of the following characteristics:
             <ul>
-                <li><b>A shiny, skin-colored bump</b> that's translucent, meaning you can see a bit through the surface. The bump can look pearly white or pink on white skin. On brown and Black skin, the bump often looks brown or glossy black. Tiny blood vessels might be visible, though they may be difficult to see on brown and Black skin. The bump may bleed and scab over.</li>
-            <li><b>A brown, black or blue lesion —</b> or a lesion with dark spots — with a slightly raised, translucent border.</li>
-            <li><b>A flat, scaly patch</b> with a raised edge. Over time, these patches can grow quite large.</li>
-             <li> <b> A white, waxy, scar-like lesion </b>without a clearly defined border.</li>
+                <li><b>A shiny, skin-colored bump</b> that's translucent, meaning you can see a bit through the surface.
+                    The bump can look pearly white or pink on white skin. On brown and Black skin, the bump often looks
+                    brown or glossy black. Tiny blood vessels might be visible, though they may be difficult to see on
+                    brown and Black skin. The bump may bleed and scab over.</li>
+                <li><b>A brown, black or blue lesion —</b> or a lesion with dark spots — with a slightly raised,
+                    translucent border.</li>
+                <li><b>A flat, scaly patch</b> with a raised edge. Over time, these patches can grow quite large.</li>
+                <li> <b> A white, waxy, scar-like lesion </b>without a clearly defined border.</li>
             </ul>
         </div>
-        <div class="vasc">
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-            <p *ngIf="disease == 'Vascular Skin Lesion'">paragraph2</p>
+        <div class="vasc" *ngIf="disease == 'Vascular Skin Lesion'">
+            <p>Vascular lesions are relatively common abnormalities of the
+                skin and underlying tissues, more commonly known as birthmarks. There are three major categories of
+                vascular lesions: Hemangiomas, Vascular Malformations, and Pyogenic Granulomas. While these birthmarks
+                can look similar at times, they each vary in terms of origin and necessary treatment.</p>
+            <h6><b>Complications</b></h6>
+            <ul>
+                <li>Local complications include ulceration, bleeding, and infection. Most bleeding can be controlled by
+                    simple pressure. Superficial infection can be treated with topical antibiotic ointment and
+                    non-adhering dressings. Lesions in the anogenital area are often difficult to treat and laser
+                    therapy may be indicated. </li>
+                <li>Hemangiomas in vital areas may need special treatment, especially those around the eyes that may
+                    affect vision and lead to amblyopia. There may be lesions in the airway that cause respiratory
+                    compromise and others may interfere with defecation and feeding.</li>
+                <li>Kasbach-Merritt syndrome is characterized by rapid growth of hemangiomas associated with
+                    thrombocytopenia and bleeding secondary to platelet trapping and consumption coagulopathy.</li>
+                <li>Disseminated neonatal hemangiomatosis - multiple skin lesions and also may have visceral hemangiomas
+                    that can lead to high output cardiac failure and bleeding</li>
+                <li>Residua post regression - may have hypopigmentation, telangiectasia, scarring, and redundant skin
+                </li>
+            </ul>
+            <h6><b>Treatment</b></h6>
+            <ul>
+                <li>Reassure - Explain the natural course of the hemangiomas.</li>
+                <li>Encourage families to take pictures to document either progression or involution of lesions.
+                    Comparison films help in deciding whether treatment is necessary or has been effective.</li>
+                <li>If lesions are very large, growing very rapidly, interfering with vital functions, in areas that are
+                    constantly irritated, or associated with bleeding disorder or heart failure, referral to a pediatric
+                    dermatologist is recommended.</li>
+            </ul>
         </div>
-        <div class="mel">
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-            <p *ngIf="disease == 'Melanoma'">paragraph2</p>
+        <div class="mel" *ngIf="disease == 'Melanoma'">
+            <p>Melanoma, the most serious type of skin cancer, develops in the cells
+                (melanocytes) that produce melanin — the pigment that gives your skin its color. Melanoma can also form
+                in your eyes and, rarely, inside your body, such as in your nose or throat.<br><br>
+
+                The exact cause of all melanomas isn't clear, but exposure to ultraviolet (UV) radiation from sunlight
+                or tanning lamps and beds increases your risk of developing melanoma. Limiting your exposure to UV
+                radiation can help reduce your risk of melanoma.<br><br>
+
+                The risk of melanoma seems to be increasing in people under 40, especially women. Knowing the warning
+                signs of skin cancer can help ensure that cancerous changes are detected and treated before the cancer
+                has spread. Melanoma can be treated successfully if it is detected early.</p>
+            <h6><b>Symptoms</b></h6>
+            <p>Melanomas can develop anywhere on your body. They most often develop in areas that have had exposure to
+                the sun, such as your back, legs, arms and face.<br><br>
+
+                Melanomas can also occur in areas that don't receive much sun exposure, such as the soles of your feet,
+                palms of your hands and fingernail beds. These hidden melanomas are more common in people with darker
+                skin.<br><br>
+                The first melanoma signs and symptoms often are:</p>
+            <ul>
+                <li>A change in an existing mole</li>
+                <li>The development of a new pigmented or unusual-looking growth on your skin</li>
+            </ul>
+            <h6><b>Treatment</b></h6>
+            <p>While melanoma is one of the most dangerous forms of skin cancer, promising new treatment options are
+                improving quality of life and increasing survival rates for patients with advanced melanoma.<br><br>
+
+                If you’ve been diagnosed, your treatment choices depend on the stage of the disease, the location of the
+                tumor and your overall health. Options include:</p>
+            <ul>
+                <li>Surgical removal of the melanoma</li>
+                <li>Immunotherapy</li>
+                <li>Targeted therapy</li>
+                <li>Chemotherapy</li>
+                <li>Radiation</li>
+            </ul>
         </div>
-        <div class="df">
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-            <p *ngIf="disease == 'Dermatofibroma'">paragraph2</p>
+        <div class="df" *ngIf="disease == 'Dermatofibroma'">
+            <p>Dermatofibroma (superficial benign fibrous histiocytoma) is a common
+                cutaneous nodule of unknown etiology that occurs more often in women. Dermatofibroma frequently develops
+                on the extremities (mostly the lower legs) and is usually asymptomatic, although pruritus and tenderness
+                can be present. It is actually the most common painful skin tumor. A number of well-described,
+                histologic subtypes of dermatofibroma have been reported. Removal of the tumor is usually not typically
+                required unless diagnostic uncertainty exists or particularly troubling symptoms are present.</p>
+            <h6><b>Symptoms and Complications</b></h6>
+            <p>Dermatofibromas tend to grow slowly. The growths typically have some defining characteristics that can
+                aid their identification.
+                <br>
+                Key markers of a dermatofibroma are:
+            </p>
+            <ul>
+                <li><b>Appearance:</b> A dermatofibroma presents as a round bump that is mostly under the skin.</li>
+                <li><b>Size:</b> The normal range is about 0.5–1.5 centimeters (cm), with most lesions being 0.7–1.0 cm
+                    in diameter. The size will usually remain stable.</li>
+                <li><b>Color:</b> The growths vary in color among individuals but will generally be pink, red, gray,
+                    brown,
+                    or black.
+                <li> <b> Location:</b> Dermatofibromas are most common on the legs, but they sometimes appear on the
+                    arms,
+                    trunk, and, less commonly, elsewhere on the body.</li>
+                <li> <b> Additional symptoms:</b> Although they are usually harmless and painless, these growths may
+                    occasionally be itchy, tender, painful, or inflamed.</li>
+            </ul>
         </div>
     </div>
 </body>
